@@ -18,10 +18,10 @@ public class Product {
 
     private String description;
 
-    /*
     @Column(name = "unit_price")
     private BigDecimal unitPrice;
-
+    
+    /*
     @Column(name = "sell_count")
     private int sellCount;
 
@@ -31,4 +31,25 @@ public class Product {
     @Column(name = "img_url")
     private String imgURL;
     */
+
+    public void setName(String name){
+        this.name = name ; 
+    } 
+    public String getName() {
+        return this.name ; 
+    }
+    
+    public void setDescription(String description){
+        this.description = description ; 
+    } 
+    public String getDescription() {
+        return this.description ; 
+    }
+    
+    public void setUnitPrice(BigDecimal unitPrice) {
+        this.unitPrice = unitPrice ; 
+    }
+    public BigDecimal getUnitPrice() {
+        return this.unitPrice ; 
+    } 
 }
